@@ -13,5 +13,5 @@ $(call inherit-product, device/xiaomi/santoni/device.mk)
 PRODUCT_NAME := omni_santoni
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Wingtech
+PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 4X
