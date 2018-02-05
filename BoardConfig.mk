@@ -38,6 +38,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true
 
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 androidboot.selinux=permissive
@@ -51,6 +52,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -84,7 +86,8 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TW_DEVICE_VERSION := NikeshKataria
+TWRP_INCLUDE_LOGCAT := true
+TW_EXTRA_LANGUAGES := true
 
 # Disable Mouse Cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -94,3 +97,4 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+TW_INCLUDE_NTFS_3G := true
